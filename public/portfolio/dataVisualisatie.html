@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Data visualisaties - Mick Jasker</title>
+    <link rel="stylesheet" href="../main/style.css">
+
+    <script src="https://use.typekit.net/xal8scs.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
+
+</head>
+<body>
+<header class="container-fluid">
+    <div class="row">
+        <img src="../main/img/logo.svg" alt="logo" class="col-lg-4">
+        <nav class="col-md-8">
+            <ul>
+                <li><a href="../index.html">Terug</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="landing" style="background-image: url(../main/img/dataVisual.png)">
+        <div class="title">
+            <h1>Data visualisaties</h1>
+            <h3>AirBnB map projection van New York</h3>
+        </div>
+    </section>
+    <section class="content container">
+        <article>
+            <h2>Het idee</h2>
+            <p>Nadat ik op internet naar verschillende voorbeelden heb gekeken wilde ik iets gaan doen met
+                geocharts.</p>
+            <hr>
+            <h2>De datasets</h2>
+            <p>Na het bekijken van verschillende bronnen met data ben ik op de data van AirBnB gekomen. Hier boden ze
+                alle beschikbare appartementen in 43 verschillende steden over de hele wereld. Omdat ik zelf heel erg
+                van New York hou wilde ik met de data van deze stad te gaan werken.</p>
+
+            <p>Met de data die ik had wou ik de op een kaart van New York projecteren welke wijken het duurst zijn of
+                welke wijken de hoogste reviews hebben.</p>
+            <hr>
+            <h2>De uitvoering</h2>
+            <p>Om dit uit te voeren wilde ik eerst testen hoe bruikbaar de data is door de data in PowerBI te plaatsen
+                en de region map tool te gebruiken. Hier liep ik al tegen het eerste probleem aan. De kaarten van
+                PowerBI konden niet op wijkniveau kijken van NYC.</p>
+            <p>Om verder te gaan in een interactief prototype wilde ik verder gaan met Google Charts. Hier ging nog meer
+                fout doordat de documentatie van Google Charts erg onduidelijk is. Hier is het uiteindelijk niet gelukt
+                om op wijkniveau te komen. Om toch wat te laten zien besloot ik om de data van drie AirBnB steden uit
+                Italië te gebruiken en deze als markers op de kaart te laten zien. Dit kreeg ik helaas alleen hardcoded
+                aan de praat.</p>
+            <p>Om dit daadwerkelijk te realiseren kwam ik tot de conclusie dat ik json zou moeten gaan gebruiken wat
+                voor mij een uitdaging was omdat het voor mij de eerste keer was dat ik ermee gewerkt heb. Dit is dan
+                ook helaas niet gelukt in de korte tijd die we hadden voor dit project.</p>
+            <p>Voor toekomstige projecten wil ik zeker meer js gaan gebruiken waar json o.a. ook een onderdeel van uitmaakt</p>
+        </article>
+    </section>
+</main>
+<footer class="container">
+    <div class="footerContent">
+        <h4>Mick Jasker - 2017</h4>
+        <h5>Fontys hogeschool ICT & Media Design - S3 Trial & error</h5>
+    </div>
+</footer>
+</body>
+</html>

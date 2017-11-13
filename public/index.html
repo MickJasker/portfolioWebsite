@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>Mick Jasker</title>
     <link rel="stylesheet" href="main/style.css">
 
     <script src="https://use.typekit.net/xal8scs.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
+    <script src="main/js/jquery-3.2.1.min.js"></script>
 
 </head>
 <body>
-<header class="container">
+<header class="container-fluid">
     <div class="row">
-        <img src="" alt="logo" class="col-md-4">
-        <nav class="col-md-8"></nav>
+        <img src="main/img/logo.svg" alt="logo" class="col-lg-4">
     </div>
 </header>
-<main>
+<main class="mainContent">
     <section class="landing">
         <div class="title">
             <h1>S3 Trial and error</h1>
@@ -24,26 +27,48 @@
         </div>
 
     </section>
-    <section class="content container-fluid">
+    <section class="content container">
         <div class="row blockRow">
-            <a href="#" class="col-md-4"><div class="block">Data visualisatie</div></a>
-            <a href="#" class="col-md-4"><div class="block">Moving media</div></a>
-            <a href="#" class="col-md-4"><div class="block">Media instalaties</div></a>
+            <a href="portfolio/dataVisualisatie.html" class="col-lg-4 ded" style="background: url(main/img/dataVisual.jpg)">
+                <div class="block">Data visualisatie</div>
+            </a>
+            <a href="portfolio/movingMedia.html" class="col-lg-4  ded sco" style="background: url(main/img/movingMedia.png)">
+                <div class="block">Moving media</div>
+            </a>
+            <a href="#" class="col-lg-4 ded" style="background: url(main/img/mediaInstalatie.jpg)">
+                <div class="block">Media instalaties</div>
+            </a>
         </div>
         <div class="row blockRow">
-            <a href="#" class="col-md-4"><div class="block">Data visualisatie</div></a>
-            <a href="#" class="col-md-4"><div class="block">Moving media</div></a>
-            <a href="#" class="col-md-4"><div class="block">Media instalaties</div></a>
+            <a href="#" class="col-lg-4">
+                <div class="block">BW ventures - Conceptboek</div>
+            </a>
+            <a href="#" class="col-lg-4">
+                <div class="block">BW ventures - Front-end paginas</div>
+            </a>
+            <a href="#" class="col-lg-4">
+                <div class="block">BW ventures - Procesverslag</div>
+            </a>
         </div>
         <div class="row blockRow">
-            <a href="#" class="col-md-4"><div class="block">Data visualisatie</div></a>
-            <a href="#" class="col-md-4"><div class="block">Moving media</div></a>
-            <a href="#" class="col-md-4"><div class="block">Media instalaties</div></a>
+            <a href="#" class="col-lg-4">
+                <div class="block">BW ventures - Eindpresentatie</div>
+            </a>
+            <a href="#" class="col-lg-4">
+                <div class="block">Self assesment</div>
+            </a>
         </div>
 
 
     </section>
 </main>
-<footer></footer>
+<footer class="container">
+    <div class="footerContent">
+        <h4>Mick Jasker - 2017</h4>
+        <h5>Fontys hogeschool ICT & Media Design - S3 Trial & error</h5>
+    </div>
+
+</footer>
+<script src="main/js/main.js"></script>
 </body>
 </html>

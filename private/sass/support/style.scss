@@ -5,7 +5,37 @@ body {
   color: $white;
   header {
     position: fixed !important;
-    background-color: linear-gradient(to bottom, $black, rgba(0,0,0,0)) !important;
+    background: url("img/header.svg");
+    background-size: cover;
+    background-position: right;
+    height: 200px;
+    z-index: 1000;
+    width: 100vw !important;
+    img {
+      padding: 15px;
+      max-height: 100px;
+    }
+    nav {
+      text-align: right;
+      ul {
+        margin: 0;
+        li {
+          display: inline;
+          list-style: none;
+          line-height: 96px;
+          padding: 15px;
+          a {
+            color: $white;
+            font-size: 24px;
+            transition: 0.3s ease;
+            &:hover {
+              color: $brand-secondary;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
   }
   main {
     .landing {
@@ -13,6 +43,8 @@ body {
       width: 100%;
       background-image: url("img/landing.jpg");
       background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
       .title {
         text-align: center;
         padding-top: calc(50vh - 58.5px);
@@ -26,29 +58,55 @@ body {
       }
     }
     .content {
+      margin-top: 50px;
       .blockRow {
+        transform: skewY(-3deg);
+        .disabled {
+          filter: grayscale(100%);
+        }
         a {
           width: 100%;
           margin: 0;
           padding: 0;
           color: $white;
-          &:hover {
+          background-size: cover !important;
+          background-position: center !important;
+          &:hover, &:focus {
             text-decoration: none;
           }
+
           .block {
-            height: calc(100vw / 3);
-            background-color: aqua;
-            outline: solid white medium;
-            line-height: calc(100vw / 3);
+            height: 300px;
+            line-height: 300px;
             text-align: center;
-            font-size: 24px;
+            font-size: 20px;
+            transition: 0.3s ease;
+            transform: skewY(3deg);
+            &:hover {
+              font-size: 24px;
+              color: $brand-secondary;
+            }
           }
         }
 
       }
     }
+    article {
+      h2 {
+        color: $brand-secondary;
+        p {
+          font-size: 18px !important;
+        }
+      }
+    }
   }
   footer {
-
+    .footerContent {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      h4, h5 {
+        font-weight: 200;
+      }
+    }
   }
 }
