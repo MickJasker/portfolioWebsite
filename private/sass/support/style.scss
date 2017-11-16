@@ -1,8 +1,17 @@
 body {
   font-family: "mr-eaves-xl-modern", Helvetica, sans-serif;
   font-weight: 300;
+  font-size: 20px !important;
   background-color: $black;
   color: $white;
+  a {
+    color: $brand-secondary;
+    transition: 0.3s ease;
+    &:hover {
+      text-decoration: none;
+      color: $brand-primary;
+    }
+  }
   header {
     position: fixed !important;
     background: url("img/header.svg");
@@ -38,6 +47,19 @@ body {
     }
   }
   main {
+
+    .button {
+      padding: 10px;
+      background-color: $brand-secondary;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s ease;
+      &:hover {
+        background-color: $brand-primary;
+      }
+    }
+
     .landing {
       height: 100vh;
       width: 100%;
@@ -60,7 +82,6 @@ body {
     .content {
       margin-top: 50px;
       .blockRow {
-        transform: skewY(-3deg);
         .disabled {
           filter: grayscale(100%);
         }
@@ -71,8 +92,10 @@ body {
           color: $white;
           background-size: cover !important;
           background-position: center !important;
+          background: $brand-primary;
           &:hover, &:focus {
             text-decoration: none;
+            filter: grayscale(100);
           }
 
           .block {
@@ -81,10 +104,8 @@ body {
             text-align: center;
             font-size: 20px;
             transition: 0.3s ease;
-            transform: skewY(3deg);
             &:hover {
               font-size: 24px;
-              color: $brand-secondary;
             }
           }
         }
@@ -94,9 +115,6 @@ body {
     article {
       h2 {
         color: $brand-secondary;
-        p {
-          font-size: 18px !important;
-        }
       }
     }
   }

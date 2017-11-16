@@ -6745,8 +6745,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 body {
   font-family: "mr-eaves-xl-modern", Helvetica, sans-serif;
   font-weight: 300;
+  font-size: 20px !important;
   background-color: #000;
   color: #fff; }
+  body a {
+    color: #f79420;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+    body a:hover {
+      text-decoration: none;
+      color: #0068a9; }
   body header {
     position: fixed !important;
     background: url("img/header.svg");
@@ -6775,6 +6783,16 @@ body {
             body header nav ul li a:hover {
               color: #f79420;
               text-decoration: none; }
+  body main .button {
+    padding: 10px;
+    background-color: #f79420;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+    body main .button:hover {
+      background-color: #0068a9; }
   body main .landing {
     height: 100vh;
     width: 100%;
@@ -6792,37 +6810,32 @@ body {
         font-weight: 200; }
   body main .content {
     margin-top: 50px; }
-    body main .content .blockRow {
-      -webkit-transform: skewY(-3deg);
-              transform: skewY(-3deg); }
-      body main .content .blockRow .disabled {
-        -webkit-filter: grayscale(100%);
-                filter: grayscale(100%); }
-      body main .content .blockRow a {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        color: #fff;
-        background-size: cover !important;
-        background-position: center !important; }
-        body main .content .blockRow a:hover, body main .content .blockRow a:focus {
-          text-decoration: none; }
-        body main .content .blockRow a .block {
-          height: 300px;
-          line-height: 300px;
-          text-align: center;
-          font-size: 20px;
-          -webkit-transition: 0.3s ease;
-          transition: 0.3s ease;
-          -webkit-transform: skewY(3deg);
-                  transform: skewY(3deg); }
-          body main .content .blockRow a .block:hover {
-            font-size: 24px;
-            color: #f79420; }
+    body main .content .blockRow .disabled {
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+    body main .content .blockRow a {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      background-size: cover !important;
+      background-position: center !important;
+      background: #0068a9; }
+      body main .content .blockRow a:hover, body main .content .blockRow a:focus {
+        text-decoration: none;
+        -webkit-filter: grayscale(100);
+                filter: grayscale(100); }
+      body main .content .blockRow a .block {
+        height: 300px;
+        line-height: 300px;
+        text-align: center;
+        font-size: 20px;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease; }
+        body main .content .blockRow a .block:hover {
+          font-size: 24px; }
   body main article h2 {
     color: #f79420; }
-    body main article h2 p {
-      font-size: 18px !important; }
   body footer .footerContent {
     padding-top: 50px;
     padding-bottom: 50px; }
