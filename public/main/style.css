@@ -6745,7 +6745,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 body {
   font-family: "mr-eaves-xl-modern", Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 20px !important;
+  font-size: 18px;
   background-color: #000;
   color: #fff; }
   body a {
@@ -6841,3 +6841,7 @@ body {
     padding-bottom: 50px; }
     body footer .footerContent h4, body footer .footerContent h5 {
       font-weight: 200; }
+
+@media (min-width: 300px) and (max-width: 540px) {
+  p {
+    font-size: 36px !important; } }
