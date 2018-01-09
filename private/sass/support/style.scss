@@ -106,9 +106,6 @@ body {
 						background-position: center !important;
 						border-radius: 15px;
 						box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
-						&:hover {
-							box-shadow: 4px 4px 30px 10px rgba(0, 0, 0, 0.10);
-						}
 					}
 					&:hover, &:focus {
 						text-decoration: none;
@@ -137,17 +134,42 @@ body {
 				box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
 				max-height: 800px;
 			}
+			.fontExampleHead {
+				font-family: "Montserrat", Helvetica, sans-serif;
+				font-weight: 900;
+			}
+			.fontExamplePara {
+				font-family: Roboto, sans-serif;
+				font-weight: 300;
+			}
+			.color {
+				margin: 0 0 25px;
+				.colorBlock {
+					width: 150px;
+					height: 150px;
+					border-radius: 15px;
+					background-color: #282828;
+					box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
+				}
+				h5 {
+					margin: 10px 0;
+				}
+			}
 			h2 {
 				color: $brand-secondary;
 			}
 		}
 	}
 	footer {
+		background-color: #282828;
+		margin: 50px 0 0;
 		.footerContent {
-			padding-top: 50px;
-			padding-bottom: 50px;
+
+			padding-top: 25px;
+			padding-bottom: 25px;
 			h4, h5 {
 				font-weight: 200;
+				color: $white;
 			}
 		}
 	}
