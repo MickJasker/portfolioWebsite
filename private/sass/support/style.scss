@@ -67,7 +67,7 @@ body {
 		}
 
 		.landing {
-			height: 100vh;
+			height: 75vh;
 			width: 100%;
 			background-image: url("img/landing.jpg");
 			background-size: cover;
@@ -77,7 +77,7 @@ body {
 			color: $white;
 			.title {
 				text-align: center;
-				padding-top: calc(50vh - 58.5px);
+				padding-top: calc(37.5vh - 58.5px);
 				h1 {
 					font-size: 72px;
 					font-weight: 100;
@@ -133,6 +133,10 @@ body {
 				border-radius: 15px;
 				box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
 				max-height: 800px;
+			}
+			.onderzoekImg {
+				border-radius: 50px;
+				height: 100px;
 			}
 			.fontExampleHead {
 				font-family: "Montserrat", Helvetica, sans-serif;

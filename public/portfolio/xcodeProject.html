@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8">
+		<title>Fitness iOS app - Mick Jasker</title>
+		<link rel="stylesheet" href="../main/style.css">
+		
+		<script src="https://use.typekit.net/xal8scs.js"></script>
+		<script>try {
+			Typekit.load({async: true});
+		} catch (e) {
+		}</script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400,900|Open+Sans:400,700"
+		      rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800,900|Roboto:300,400" rel="stylesheet">
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="row">
+				<img src="../main/img/logo.svg" alt="logo" class="col-lg-4">
+				<nav class="col-md-8">
+					<ul>
+						<li><a href="../index.html">Terug</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="landing" style="background-image: url(../main/img/fitness.jpg)">
+				<div class="title">
+					<h1>Fitness app</h1>
+					<h3>iOS app</h3>
+				</div>
+			</section>
+			<section class="content container">
+				<article>
+					<h2>Fitness iOS app</h2>
+					<p>Voor hardware en data heb ik een eerste opzet van een iPhone app gemaakt. Deze heb ik gekoppeld
+						aan Firebase en Firestore. Het is nu mogelijk om in de app in te loggen met Firebase auth. Zodra
+						Firebase teruggeeft dat het inloggen succesvol is.</p>
+					<p>Het doel van voor mij is een eerste aanraking met Xcode en Swift een eenvoudige en soepel
+						werkende app te maken.</p>
+					<p>Om dit realiseren heb ik eerst CocaoPods geïnstaleerd. Een progamma vergelijkbaar met npm. Dit
+						progamma instaleert en onderhoudt de zogenaamde 'pods'(in principe gewoon libraries). Volgens
+						heb ik de Firebase pods geïnstaleerd. Nadat dit werkte kon ik de app gaan bouwen. Na eerst de UI
+						gemaakt te hebben heb ik het inlogsysteem geprogameerd.</p>
+					<img src="../main/img/iPhoneAppCode2.png" alt="Inloggen code">
+					<p>Nadat ik dit werkende had heb ik de algemene profiel pagina geprogameerd. Hierin wordt data uit
+						de Firestore DB opgehaald en realtime geupdated.</p>
+					<img src="../main/img/iPhoneAppCode1.png" alt="Profiel">
+					<p>Verder heb ik nog een pagina gemaakt waar de gebruiker de data kan aanpassen. Dit wordt ook weer
+						in realtime geupdated.</p>
+					<img src="../main/img/iPhoneAppCode3.png" alt="Profiel aanpassen">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/J3ZwQvhoWrU?rel=0"
+					        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<p>Een demonstratie</p>
+					<p>Hoewel ik nog een paar dingen functionered zou willen krijgen (zoals het daadwerkelijk koppelen
+						van de profieldata aan de juiste userID) kijk ik zeer positef terug op dit project, ik zou
+						daarom ook in de toekomst meer met iOS willen gaan werken.. </p>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<div class="footerContent container">
+				<h4>Mick Jasker - 2017/2018</h4>
+				<h5>Fontys hogeschool ICT & Media Design - S3 Trial & error</h5>
+			</div>
+		</footer>
+	</body>
+</html>

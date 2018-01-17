@@ -6800,7 +6800,7 @@ body {
     body main .button:hover {
       background-color: #0068a9; }
   body main .landing {
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     background-image: url("img/landing.jpg");
     background-size: cover;
@@ -6810,7 +6810,7 @@ body {
     color: #fff; }
     body main .landing .title {
       text-align: center;
-      padding-top: calc(50vh - 58.5px); }
+      padding-top: calc(37.5vh - 58.5px); }
       body main .landing .title h1 {
         font-size: 72px;
         font-weight: 100; }
@@ -6854,6 +6854,9 @@ body {
     -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
             box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
     max-height: 800px; }
+  body main article .onderzoekImg {
+    border-radius: 50px;
+    height: 100px; }
   body main article .fontExampleHead {
     font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 900; }
