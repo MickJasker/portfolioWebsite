@@ -1,7 +1,7 @@
 body {
 	font-family: "Roboto", Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 20px;
 	background-color: $brand-white;
 	color: $brand-black;
 	margin: 0;
@@ -73,6 +73,7 @@ body {
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
+			background-position: center;
 			margin: 0;
 			color: $white;
 			.title {
@@ -91,13 +92,15 @@ body {
 			h2 {
 				margin: 15px 0 15px 0;
 				color: $brand-secondary;
+				font-weight: 400;
 			}
 			margin-top: 50px;
 			.blockRow {
 				.disabled {
-					filter: grayscale(100%);
+					filter: grayscale(100%) ;
 				}
 				a {
+
 					width: 100%;
 					color: $white;
 					padding: 15px;
@@ -123,16 +126,25 @@ body {
 						}
 					}
 				}
-
 			}
 		}
 		article {
+			table {
+				text-align: center;
+				td {
+					border-bottom: solid 0.5px $black;
+				}
+			}
 			img {
 				max-width: 100%;
 				margin-bottom: 15px;
 				border-radius: 15px;
 				box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
 				max-height: 800px;
+			}
+			iframe {
+				border-radius: 15px;
+				box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
 			}
 			.onderzoekImg {
 				border-radius: 50px;
@@ -166,6 +178,7 @@ body {
 	}
 	footer {
 		background-color: #282828;
+		box-shadow: inset 4px 4px 10px 0px rgba(0, 0, 0, 0.24);
 		margin: 50px 0 0;
 		.footerContent {
 
