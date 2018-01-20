@@ -2,11 +2,11 @@
 <html lang="nl">
 	<head>
 		<meta charset="UTF-8">
-		<title>Front end - Mick Jasker</title>
+		<title>React & Firebase App - Mick Jasker</title>
 		<link rel="stylesheet" href="../main/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400,900|Open+Sans:400,700"
 		      rel="stylesheet">
-	
+
 	</head>
 	<body>
 		<header class="container-fluid">
@@ -22,8 +22,8 @@
 		<main>
 			<section class="landing" style="background-image: url(../main/img/fitnessApp.jpg)">
 				<div class="title">
-					<h1>Front-end</h1>
-					<h3>BW ventures</h3>
+					<h1>React & Firebase App</h1>
+					<h3>Fitness app</h3>
 				</div>
 			</section>
 			<section class="content container">
@@ -31,15 +31,27 @@
 					<p>Ik ben voor de Fitness app aan de front-end begonnen door zowel Firebase en React op te zetten.
 						Doordat niemand in onze groep ervaring had met React moest ik de basis van React zelf op
 						internet uitzoeken.</p>
-					<p>Door de drukte heb ik niet gek veel aan de app kunnen werken. Ik wel een basis opgezet en het
-						inlog-systeem (gedeeltelijk) aan de praat gekregen. Doordat ik compleet nieuw ben bij React is
-						op dit moment het grootste propleem het doorverwijzen naar een andere pagina na het succesvol
-						inloggen.</p>
+					<p>Om te beginnen heb ik eerst een paar basis react tutorials gevolgd. Deze hebben we me al snel
+						genoeg kennis gegeven om een eerste project te gaan ontwikkellen. Nadat ik React had opgezet en
+						Firebase via NPM heb geinstaleerd ben ik een web versie van mijn iPhone app gaan bouwen. Om de
+						app te laten functioneren moest ik een paar componenten maken. Die in App.js samenkwamen. Als
+						eerste was auth.js. Dit component regelt het inloggen.</p>
+					<img src="../main/img/auth.PNG" alt="code">
+					<p>Om na het inloggen je profiel in te zien heb ik het tweede component aan gemaakt profile.js.
+						Hierin wordt data uit een Firestore DB opgehaald en in een tabel gezet. Als de data extern
+						aangepsat wordt dan wordt de data in de tabel in realtime aangepast. Een probleem wat ik helaas
+						nog niet heb kunnen oplossen is het feit dat de data nog niet gekoppeld is aan het ingelogde
+						profiel.</p>
+					<img src="../main/img/profile.PNG" alt="code">
+					<p>Om de app compleet te maken heb ik het editProfile.js component gemaakt. Dit component zorgt ervoor dat formdata naar de firestore DB wordt verzonden.</p>
+					<img src="../main/img/editProfile.PNG" alt="code">
 					<hr>
-					<h2>De gemaakte code</h2>
-					<img src="../main/img/code1.png" alt="Code">
-					<img src="../main/img/code2.png" alt="Code">
-					<img src="../main/img/code3.png" alt="Code">
+					<p>Ik ben voor de beperkte tijd die nog had best tevreden over dit projectje. In de toekomst wil ik dan ook meer met frameworks zoals React, Angular of Vue. Een aantal dingen die nog had willen toevoegen was:</p>
+					<ul>
+						<li>CSS</li>
+						<li>Profiel data gekoppeld aan de ingelogde gebruiker</li>
+						<li>Elegantere navigatie</li>
+					</ul>
 				</article>
 			</section>
 		</main>
